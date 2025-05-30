@@ -1,0 +1,35 @@
+# Fichiers bin et obj générés par la build
+bin/
+obj/
+
+# Fichiers user, configurations locales Visual Studio/VSCode
+*.user
+*.suo
+*.vscode/
+.vscode/
+
+# fichiers temporaires
+*.log
+*.tmp
+
+# Packages NuGet
+*.nupkg
+packages/
+
+# Dossiers cachés
+*.vs/
+
+# JetBrains Rider
+.idea/
+
+# Fichiers générés par Avalonia
+*.xaml.g.cs
+*.g.cs
+
+# Dotnet
+*.dll
+*.exe
+*.pdb
+
+# Cache de dotnet
+.vs/

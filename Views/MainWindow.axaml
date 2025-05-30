@@ -1,0 +1,25 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="AshNowModManager.Views.MainWindow"
+        Title="AshNow Mod Manager" Width="800" Height="600"
+        Icon="/Assets/icon.jpg">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Spacing="10">
+            <Button Content="Choose Game Folder" Click="OnChooseFolderClick"/>
+            <Button Content="Install Mod" Click="OnInstallModClick"/>
+            <TextBlock Text="Detected Mods:" FontWeight="Bold"/>
+            <ListBox Name="ModsList" Height="150"/>
+            <TextBlock Text="Log:" FontWeight="Bold"/>
+            <TextBox Name="LogOutput" Height="200" AcceptsReturn="True" IsReadOnly="True"/>
+        </StackPanel>
+
+        <TextBlock Grid.Row="2" Text="Created by AshNow" HorizontalAlignment="Right" FontSize="12" Foreground="Gray"/>
+    </Grid>
+</Window>
